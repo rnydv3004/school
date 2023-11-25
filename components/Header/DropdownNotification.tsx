@@ -54,8 +54,8 @@ const DropdownNotification = () => {
 
         <svg
           className="fill-current duration-300 ease-in-out"
-          width="18"
-          height="18"
+          width="15"
+          height="15"
           viewBox="0 0 18 18"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -71,12 +71,12 @@ const DropdownNotification = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-        className={`absolute -right-27 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:right-0 sm:w-80 ${
+        className={`absolute -right-27 mt-4.5 flex h-90 w-75 flex-col rounded-xl border bg-white border-stroke shadow-1 shadow-bodydark1 dark:shadow-black-2 dark:border-strokedark dark:bg-black sm:right-0 sm:w-80 ${
           dropdownOpen === true ? 'block' : 'hidden'
         }`}
       >
-        <div className="px-4.5 py-3">
-          <h5 className="text-sm font-medium text-bodydark2">Notification</h5>
+        <div className="px-4.5 py-2">
+          <h5 className="text-xs font-semibold text-bodydark2">Notification</h5>
         </div>
 
         <ul className="flex h-auto flex-col overflow-y-auto">
@@ -85,7 +85,7 @@ const DropdownNotification = () => {
               className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="#"
             >
-              <p className="text-sm">
+              <p className="text-xs">
                 <span className="text-black dark:text-white">
                   Edit your information in a swipe
                 </span>{' '}
@@ -101,7 +101,7 @@ const DropdownNotification = () => {
               className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="#"
             >
-              <p className="text-sm">
+              <p className="text-xs">
                 <span className="text-black dark:text-white">
                   It is a long established fact
                 </span>{' '}
@@ -116,7 +116,7 @@ const DropdownNotification = () => {
               className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="#"
             >
-              <p className="text-sm">
+              <p className="text-xs">
                 <span className="text-black dark:text-white">
                   There are many variations
                 </span>{' '}
@@ -132,7 +132,7 @@ const DropdownNotification = () => {
               className="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="#"
             >
-              <p className="text-sm">
+              <p className="text-xs">
                 <span className="text-black dark:text-white">
                   There are many variations
                 </span>{' '}

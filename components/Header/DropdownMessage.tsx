@@ -56,8 +56,8 @@ const DropdownMessage = () => {
 
         <svg
           className="fill-current duration-300 ease-in-out"
-          width="18"
-          height="18"
+          width="15"
+          height="15"
           viewBox="0 0 18 18"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -86,12 +86,12 @@ const DropdownMessage = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-        className={`absolute -right-16 mt-2.5 flex h-90 w-75 flex-col rounded-2xl border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:right-0 sm:w-80 ${
+        className={`absolute -right-16 mt-4.5 flex h-90 w-75 flex-col rounded-2xl border border-stroke bg-white shadow-1 shadow-bodydark1 dark:shadow-black-2 dark:border-strokedark dark:bg-black sm:right-0 sm:w-80 ${
           dropdownOpen === true ? "block" : "hidden"
         }`}
       >
         <div className="px-4.5 py-3">
-          <h5 className="text-sm font-medium text-bodydark2">Messages</h5>
+          <h5 className="text-xs font-semibold text-bodydark2">Messages</h5>
         </div>
 
         <ul className="flex h-auto flex-col overflow-y-auto rounded-2xl">
@@ -100,20 +100,20 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
+              <div className="h-10.5 w-10.5 rounded-full">
                 <Image
-                  width={112}
-                  height={112}
+                  width={100}
+                  height={100}
                   src={"/images/user/user-02.png"}
                   alt="User"
                 />
               </div>
 
               <div>
-                <h6 className="text-sm font-medium text-black dark:text-white">
+                <h6 className="text-xs font-medium text-black dark:text-white">
                   Mariya Desoja
                 </h6>
-                <p className="text-sm">I like your confidence 💪</p>
+                <p className="text-xs">I like your confidence 💪</p>
                 <p className="text-xs">2min ago</p>
               </div>
             </Link>
@@ -123,20 +123,20 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
+              <div className="h-10.5 w-10.5 rounded-full">
                 <Image
-                  width={112}
-                  height={112}
+                  width={100}
+                  height={100}
                   src={"/images/user/user-01.png"}
                   alt="User"
                 />
               </div>
 
               <div>
-                <h6 className="text-sm font-medium text-black dark:text-white">
+                <h6 className="text-xs font-medium text-black dark:text-white">
                   Robert Jhon
                 </h6>
-                <p className="text-sm">Can you share your offer?</p>
+                <p className="text-xs">Can you share your offer?</p>
                 <p className="text-xs">10min ago</p>
               </div>
             </Link>
@@ -146,20 +146,20 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
+              <div className="h-10.5 w-10.5 rounded-full">
                 <Image
-                  width={112}
-                  height={112}
+                  width={100}
+                  height={100}
                   src={"/images/user/user-03.png"}
                   alt="User"
                 />
               </div>
 
               <div>
-                <h6 className="text-sm font-medium text-black dark:text-white">
+                <h6 className="text-xs font-medium text-black dark:text-white">
                   Henry Dholi
                 </h6>
-                <p className="text-sm">I cam across your profile and...</p>
+                <p className="text-xs">I cam across your profile and...</p>
                 <p className="text-xs">1day ago</p>
               </div>
             </Link>
@@ -169,20 +169,20 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
+              <div className="h-10.5 w-10.5 rounded-full">
                 <Image
-                  width={112}
-                  height={112}
+                  width={100}
+                  height={100}
                   src={"/images/user/user-04.png"}
                   alt="User"
                 />
               </div>
 
               <div>
-                <h6 className="text-sm font-medium text-black dark:text-white">
+                <h6 className="text-xs font-medium text-black dark:text-white">
                   Cody Fisher
                 </h6>
-                <p className="text-sm">I’m waiting for you response!</p>
+                <p className="text-xs">I’m waiting for you response!</p>
                 <p className="text-xs">5days ago</p>
               </div>
             </Link>
@@ -192,20 +192,20 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               href="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
+              <div className="h-10.5 w-10.5 rounded-full">
                 <Image
-                  width={112}
-                  height={112}
+                  width={100}
+                  height={100}
                   src={"/images/user/user-02.png"}
                   alt="User"
                 />
               </div>
 
               <div>
-                <h6 className="text-sm font-medium text-black dark:text-white">
+                <h6 className="text-xs font-medium text-black dark:text-white">
                   Mariya Desoja
                 </h6>
-                <p className="text-sm">I like your confidence 💪</p>
+                <p className="text-xs">I like your confidence 💪</p>
                 <p className="text-xs">2min ago</p>
               </div>
             </Link>
